@@ -1,16 +1,17 @@
-/********************************** 
-* Design by:  [your name]
-* Design name:  [your design name]
-* 
-* License: [license name - e.g. MIT if you want to let others
-* use the design with attribution, or All Rights Reserved if you
-* don't want others to use the design]
-* 
-* Acknowledgments/Sources:
-* - 
-* - 
-* -
-*/
+/**
+ * ********************************
+ * Design by:  [your name]
+ * Design name:  [your design name]
+ *
+ * License: [license name - e.g. MIT if you want to let others
+ * use the design with attribution, or All Rights Reserved if you
+ * don't want others to use the design]
+ *
+ * Acknowledgments/Sources:
+ * -
+ * -
+ * -
+ */
 
 /* Starter code -- feel free to delete */
 
@@ -19,28 +20,16 @@
 /* Get your own import URL from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
 
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt "Make the cursor a little bigger by using the 64px cursor as primary" */
+body {
+  /* Prefer the 64x64 cursor so the scythe appears larger; fallback to 48/32/original then system cursor. Hotspots are center-ish for the larger images. */
+  cursor: url("Assets/Cursors/Cursor64.png") 32 32, url("Assets/Cursors/Cursor48.png") 24 24, url("Assets/Cursors/Cursor32.png") 16 16, url("Assets/Cursors/Cursor.png") 16 16, auto;
+}
+/* End of AI-generated code */
+
 .page-wrapper {
   /* Main font */
-  font-family: New Rocker, sans-serif;
-}
-h1,
-h2, 
-h3,
-h4,
-h5, 
-h6{
-  /* Header font */
-  font-family: "New Rocker", Bold;
-}
-
-/* Background */
-#css-zen-garden {
-  background: 
-  radial-gradient(rgba(255, 255, 255, 0.145),rgba(0, 0, 0, 0.792)),
-  linear-gradient(45deg, #9c6109d3 0%, #5d360fba 100%);
-}
-/* Page wrapper */
-.page-wrapper {
+  font-family: 'New Rocker', sans-serif;
   box-sizing: border-box;
   background: rgba(37, 123, 20, 0.662);
   border: 1px solid #5b0c6d;
@@ -49,3 +38,63 @@ h6{
   max-width: 960px;
   margin: 0 auto;
 }
+
+h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  /* Header font */
+  font-family: 'New Rocker', sans-serif;
+  text-shadow: .5px .3px black;
+}
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt "Choose a popping, high-contrast color palette for a dark Halloween theme and implement it" */
+/* Color choices considered:
+   - Pumpkin orange (#ff6a00): classic Halloween, very readable on dark backgrounds.
+   - Toxic lime (#b8ff00): highest pop/contrast, edgy neon look.
+   - Electric purple (#b100ff): moody and thematic, less contrast than lime/orange.
+
+   Implementation decision: use pumpkin orange for headings (thematic + high contrast),
+   near-white for body copy for readability, and toxic lime for links/accents to make them pop.
+*/
+
+/* Body text: keep high readability */
+body {
+  color: #f4f4f4; /* light gray for readability on dark backgrounds */
+}
+
+/* Headings: popping pumpkin orange with glow */
+h1, h2, h3, h4, h5, h6 {
+  color: #ff6a00;
+  text-shadow: 0 2px 10px rgba(255,106,0,0.35), 0 1px 0 rgba(0,0,0,0.6);
+}
+
+/* Links and interactive accents: neon lime for contrast */
+a, a:link, a:visited {
+  color: #b8ff00;
+  transition: color 150ms ease, text-shadow 150ms ease;
+}
+
+a:hover, a:focus {
+  color: #ffffff;
+  text-shadow: 0 0 14px rgba(184,255,0,0.85);
+}
+
+/* Small accent for metadata or subtle labels */
+.muted {
+  color: #cfcfcf;
+}
+/* End of AI-generated code */
+
+
+/* Background */
+#css-zen-garden {
+  /* Use the background image only (restored to original simple image background). */
+  background-image: url("BackgroundFortnite.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
